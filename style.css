@@ -74,6 +74,15 @@ img:hover {
     background: rgba(30, 29, 92, 0.5);
 }
 
+.marlef a {
+    margin-left: 45%;
+}
+
+.boxi {
+    width: 100px;
+    background: #141d2a;
+}
+
 .texto-card {
     color: whitesmoke;
 }
