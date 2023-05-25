@@ -38,8 +38,8 @@
         opacity: 1;
         transform: translateY(0);
       }
+      
     }
-
     /* Estilos CSS para o elemento a ser animado */
     .entrada-elemento {
       opacity: 0;
@@ -52,7 +52,10 @@
     <!-- Navbar -->
 
     <div id="container">
-        <nav class="navbar navbar-expand-md navbar-light azul">
+
+
+     <header>
+        <nav class="navbar navbar-expand-md navbar-light azul fixed-top">
             <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2" >
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
@@ -96,12 +99,12 @@
                 </ul>
             </div>
         </nav>
-    </div>
-
+    </header>
+    
     <!-- Matheus Brandão -->
 
-    <section class=" jumbotron text-center " style=" background-color: rgba(5, 41, 71, 0.527); ">
-        <div class=" container ">
+    <section class=" jumbotron text-center" style=" background-color: rgba(5, 41, 71, 0.527); ">
+        <div class=" container home">
             <a href=" https://www.linkedin.com/in/matheus-brandão-da-silva-388332168/ ">
                 <img class=" eu " src=" /img/Eu02.png " alt=" Bicho Lindo " title=" Matheus Brandão da Silva ">
             </a>
@@ -120,6 +123,8 @@
             </div>
         </div>
     </section>
+
+
 
     <!-- Projetos -->
 <div id="formacao"><h2 id=" formacao " class=" jumbotron-heading text-center text-light mt-5 "  style=" margin-bottom: 40px; ">
@@ -590,13 +595,6 @@
 
 </body>
 
-  <script>
-    // Script JavaScript para adicionar a classe CSS após o carregamento da página
-    window.addEventListener('DOMContentLoaded', function() {
-      var elemento = document.querySelector('.entrada-elemento');
-      elemento.classList.add('entrada-elemento');
-    });
-  </script>
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src=" https://code.jquery.com/jquery-3.5.1.slim.min.js " integrity=" sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj " crossorigin=" anonymous ">
