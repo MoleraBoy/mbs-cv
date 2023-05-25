@@ -27,32 +27,71 @@
 
 </head>
 
-<body class="backgroud">
+<style>
+    /* Estilos CSS para animação */
+    @keyframes entrada {
+      0% {
+        opacity: 0;
+        transform: translateY(-100px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    /* Estilos CSS para o elemento a ser animado */
+    .entrada-elemento {
+      opacity: 0;
+      animation: entrada 1s ease-in-out forwards;
+    }
+  </style>
+
+<body class="backgroud entrada-elemento">
 
     <!-- Navbar -->
 
     <div id="container">
-        <nav class="navbar navbar-expand-lg navbar-light fixed-top azul">
-            <a class="navbar-brand text-dark href=" # ">Matheus Brandão</a>
-            <button class=" navbar-toggler " type=" button " data-toggle=" collapse " data-target=" #navbarNav " aria-controls=" navbarNav " aria-expanded=" false " aria-label=" Toggle navigation ">
-        <span class=" navbar-toggler-icon "></span>
-      </button>
-            <div class=" collapse navbar-collapse " id=" navbarNav ">
-                <ul class=" navbar-nav ml-auto ">
-                    <li class=" nav-item active ">
-                        <a class=" nav-link text-white " href=" #formacao ">Formação</a>
+        <nav class="navbar navbar-expand-md navbar-light azul">
+            <div class="navbar-collapse collapse w-100 order-1 order-md-0 dual-collapse2" >
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home</a>
                     </li>
-                    <li class=" nav-item active ">
-                        <a class=" nav-link text-white " href=" #certificados ">Certificados</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#formacao">Formação</a>
                     </li>
-                    <li class=" nav-item ">
-                        <a class=" nav-link text-white " href=" #projetos ">Projetos</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projetos">Projetos</a>
                     </li>
-                    <li class=" nav-item ">
-                        <a class=" nav-link text-white " href=" #sobre ">Sobre mim</a>
+            </div>
+            <div class="mx-auto order-0">
+                <a class="navbar-brand mx-auto" href="#">Matheus Brandão</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target=".dual-collapse2">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </div>
+            <div class="navbar-collapse collapse w-100 order-3 dual-collapse2">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="index.html#certificados" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Certificados
+                        </a>
+                        <div class="dropdown-menu bg-info" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item drop-link" href="#comprog">Computação e programação</a>
+                            <div class="dropdown-divider "></div>
+                            <a class="dropdown-item drop-link" href="#exatas">Exatas</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item drop-link" href="#audiovisual">Design e Audiovisual</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item drop-link" href="#humanas">Humanas</a>
+                        </div>
                     </li>
-                    <li class=" nav-item ">
-                        <a class=" nav-link text-white " href=" #contato ">Contato</a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobre">Sobre mim</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contato">Contato</a>
                     </li>
                 </ul>
             </div>
@@ -83,12 +122,12 @@
     </section>
 
     <!-- Projetos -->
+<div id="formacao"><h2 id=" formacao " class=" jumbotron-heading text-center text-light mt-5 "  style=" margin-bottom: 40px; ">
+    Formação
+</h2></div>
 
-    <h2 id=" formacao " class=" jumbotron-heading text-center text-light mt-5 "  style=" margin-bottom: 40px; ">
-        Formação
-    </h2>
 
-    <div class=" album py-5 azul-claro "  >
+    <div class=" album py-5 azul-claro" >
         <div class=" container ">
 
             <div class=" row ">
@@ -104,17 +143,17 @@
         </div>
     </div>
 
-        
+        <!--Certificados-->
     <h2 class=" jumbotron-heading text-center text-light mt-5 " id=" certificados " style=" margin-bottom: 40px; ">
         Certificados
     </h2>
 
     <div class=" album py-5 azul-claro " >
         <div class=" container ">
-        
 
-            <div class=" album py-5 "></div>
-            <h2 class=" jumbotron-heading text-center text-light mt-5 " id=" certificados " style=" margin-bottom: 40px; ">
+            <!--Computação e programação-->
+            <div class=" album py-5 " id="comprog"></div>
+            <h2 class=" jumbotron-heading text-center text-light mt-5 "  style=" margin-bottom: 40px; ">
                 Computação e programação
             </h2>
             <div class=" album py-5 "></div>
@@ -275,9 +314,10 @@
                     </div>
                 </div>
             </div>
-            
+
+            <!--Audiovisual-->
         <div class=" container ">
-            <div class=" album py-5 "></div>
+            <div class=" album py-5 " id="audiovisual"></div>
             <h2 class=" jumbotron-heading text-center text-light mt-5 " id=" certificados " style=" margin-bottom: 40px; ">
                 Design e audio visual
             </h2>
@@ -335,11 +375,13 @@
 
          </div>
         </div>
-                <div class=" album py-5 "></div>
+
+        <!--Exatas-->
+                <div class=" album py-5 " ></div>
                 <h2 class=" jumbotron-heading text-center text-light mt-5 " id=" certificados " style=" margin-bottom: 40px; ">
                     Exatas
                 </h2>
-                <div class=" album py-5 "></div>
+                <div class=" album py-5 " id="exatas"></div>
                 <!--Estatística-->
                 <div class=" row ">
                     <div class=" card box-shadow bg-card ">
@@ -367,7 +409,7 @@
                         </div>
                     </div>
                 </div>
-                <div class=" album py-5 "></div>
+                <div class=" album py-5 " id="humanas"></div>
                 <h2 class=" jumbotron-heading text-center text-light mt-5 " id=" certificados " style=" margin-bottom: 40px; ">
                     Humanas
                 </h2>
@@ -403,9 +445,10 @@
         </div>
     </div>
 
-        <h2 class=" jumbotron-heading text-center text-light mt-5 " id=" projetos " style=" margin-bottom: 40px; ">
-            Projetos
-        </h2>
+        <div id="projetos"><h2 class=" jumbotron-heading text-center text-light mt-5 " id=" projetos " style=" margin-bottom: 40px; ">
+    Projetos
+</h2></div>
+
 
         <div class=" album py-5 azul-claro ">
             <div class=" container ">
@@ -460,9 +503,9 @@
 
     <!-- Sobre -->
 
-    <section class=" jumbotron text-center " id=" sobre ">
+    <section class=" jumbotron text-center " >
         <div class=" container ">
-            <h2 class=" jumbotron-heading text-dark " style=" margin-bottom: 40px; ">Sobre Mim</h2>
+            <div id="sobre"><h2 class=" jumbotron-heading text-dark " style=" margin-bottom: 40px; ">Sobre Mim</h2></div>
             <p class=" lead ">Cursando o terceiro semestre da faculdade de Ciência da Computação. Ao decorre do tempo fiz alguns cursos voltados para a área de artes digitais, edição de vídeo e animação. Guardo esses conhecimentos comigo pois, me ensinaram a trabalhar com a organização de documentos, raciocínio lógico, montar briefings e aliar a funcionalidade de um projeto sem abrir mão de sua estética. Me encontrei de fato no meu curso atual. Tenho grande interesse por programação, Data Science, algoritmos e segurança da informação. Minha primeira experiência como aprendiz pela MGM me fez aperfeiçoar ainda mais meu domínio pelo Excel, assim conseguia entregar os relatórios diários para o controle de manutenção. No presente, trabalho com atendimento ao cliente, e através das problemáticas apresentadas busco formas de sanar as adversidades do dia a dia, sempre de forma humanizada. Percebo pelo meu atual emprego que muitos clientes ainda não são familiarizados com o ambiente digital, ou que são vítimas de fraudes. Isso me abriu os olhos para a problemática do analfabetismo digital, então tenho futuros projetos para auxiliar neste aspecto. Ainda necessito de muita bagagem teórica e prática para de fato diminuir essas contradições, mas tenho para mim esse objetivo e acredito que somarei nos esforços para sua solução.
             </p>
         </div>
@@ -472,8 +515,8 @@
 
     <section id=" contato ">
         <div>
-            <div class=" container-fluid email " id=" contato ">
-                <h2 class=" jumbotron-heading text-center texto-blue " style=" margin-bottom: 10px; ">Contato</h2>
+            <div class=" container-fluid email ">
+                <div id="contato"><h2 class=" jumbotron-heading text-center texto-blue " style=" margin-bottom: 10px; ">Contato</h2></div>
                 <h3 style=" padding-top: 25px; " class=" text-center texto-blue ">Disponível para oportunidades</h3>
                 <p class=" texto-link ">
                     <a href=" mailto:matheus090201gx@gmail.com ">
@@ -547,6 +590,13 @@
 
 </body>
 
+  <script>
+    // Script JavaScript para adicionar a classe CSS após o carregamento da página
+    window.addEventListener('DOMContentLoaded', function() {
+      var elemento = document.querySelector('.entrada-elemento');
+      elemento.classList.add('entrada-elemento');
+    });
+  </script>
 <!-- Optional JavaScript -->
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src=" https://code.jquery.com/jquery-3.5.1.slim.min.js " integrity=" sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj " crossorigin=" anonymous ">

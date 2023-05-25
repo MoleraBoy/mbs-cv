@@ -1,0 +1,524 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Site sobre o universo do cinema e cultura cult">
+    <meta name="author" content="MB Company">
+    <link rel="icon" href="/docs/4.1/assets/img/favicons/favicon.ico">
+
+    <title>Cine Café - Seu site de filmes, séries e animes</title>
+
+    <!-- Favcon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="ico/favicon_io/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/ico/favicon_io/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="ico/favicon_io/favicon-16x16.png">
+    <link rel="manifest" href="ico/favicon_io/site.webmanifest">
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.1/examples/carousel/">
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <!-- CSS -->
+    <link href="carousel.css" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" />
+</head>
+
+<body class="text-center" id="central">
+
+    <!-- Header inicio -->
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-custom">
+            <a class="navbar-brand sombra" href="index.html"><i class="fas fa-coffee "></i> Cine Café</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle active" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Home
+                        </a>
+                        <div class="dropdown-menu bg-dropdown" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item drop-link" href="inicio.html">Resenhas do dia</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item drop-link" href="inicio.html.html#pq">Por que assistir?</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item drop-link" href="inicio.html#dicas">Dicas dicosas</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item drop-link" href="inicio.html#reco">Recomendações do dia</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown" id="pi">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Recomendações
+                        </a>
+                        <div class="dropdown-menu bg-dropdown" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item drop-link" href="recomendacoes.html#pi">Página Inicial</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item drop-link" href="recomendacoes.html#filmes">Filmes</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item drop-link" href="recomendacoes.html#animes">Séries</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item drop-link" href="recomendacoes.html#animes">Animes</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown" id="pi">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                          Resenhas
+                        </a>
+                        <div class="dropdown-menu bg-dropdown" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item drop-link" href="resenhas.html">Página principal</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item drop-link" href="inicio.html#resenha-f">Filmes</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item drop-link" href="inicio.html#resenha-s">Séries</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item drop-link" href="inicio.html#resenha-a">Animes</a>
+                        </div>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/artes.html">Artes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="breve">Em breve!</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+    <!-- Header fim -->
+
+    <!-- Carousel -->
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+            <li data-target="#myCarousel" data-slide-to="3"></li>
+            <li data-target="#myCarousel" data-slide-to="4"></li>
+            <li data-target="#myCarousel" data-slide-to="5"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="first-slide" src="/img/mando.png" alt="First slide">
+                <div class="container">
+                    <div class="carousel-caption text-left">
+                        <h1 class="sombra">Universo Star Wars devolta aos trilhos?</h1>
+                        <p class="sombra">Uma nova esperança contra a ameaça JJ Abrams.</p>
+                        <p><a class="btn btn-lg btn-dark" href="mandalorian-ss.html" role="button">Leia Mais</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="second-slide " src="/img/irish.png" alt="Second slide">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1 class="sombra">Eu ouvi dizer que você pinta casas...</h1>
+                        <p class="sombra">Embarque nessa longa (bem longa) aventura de Copolla e companhia</p>
+                        <p><a class="btn btn-lg btn-dark" href="irlandes-ss.html" role="button">Leia Mais</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="third-slide" src="/img/gambita.png" alt="Third slide">
+                <div class="container">
+                    <div class="carousel-caption text-right">
+                        <h1 class="sombra">Xeque Mate</h1>
+                        <p class="sombra">Essa série faz uma partida de Xadrez ser mais emocionante do que final de campeonato</p>
+                        <p><a class="btn btn-lg btn-dark" href="gambito-ss.html" role="button">Leia Mais</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="fourth-slide" src="/img/maze-02.png" alt="Fourth slide">
+                <div class="container">
+                    <div class="carousel-caption text-left">
+                        <h1 class="sombra">Corre malandro!</h1>
+                        <p class="sombra">Inseticida não funciona contra essas criaturas!</p>
+                        <p><a class="btn btn-lg btn-dark" href="maze-ss.html" role="button">Leia Mais</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="fifth-slide" src="/img/hered.png" alt="Fifth slide">
+                <div class="container">
+                    <div class="carousel-caption text-center">
+                        <h1 class="sombra">Em família</h1>
+                        <p class="sombra">Nem sempre uma herança é boa, na verdade pode ser o pelo contrário...</p>
+                        <p><a class="btn btn-lg btn-dark" href="hereditario-ss.html" role="button">Leia Mais</a></p>
+                    </div>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="sixth-slide" src="/img/juju.png" alt="Sexth slide">
+                <div class="container">
+                    <div class="carousel-caption text-right">
+                        <h1 class="sombra">Lutas e mais lutas!</h1>
+                        <p class="sombra">Fazia tempo que um shounen não trazia tanta qualidade e roteiro assim!</p>
+                        <p><a class="btn btn-lg btn-dark" href="jujutsu-ss.html" role="button">Leia Mais</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#myCarousel" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Voltar</span>
+        </a>
+        <a class="carousel-control-next" href="#myCarousel" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Próximo</span>
+        </a>
+    </div>
+    <!-- Carousel fim-->
+
+    <main role="main" class="container">
+
+        <!-- Marketing messaging and featurettes
+      ================================================== -->
+        <!-- Wrap the rest of the page in another container to center all the content. -->
+
+        <!-- Resenhas do dia titulo -->
+        <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center " id="resenhas">
+            <h1 class="display-4 ">Resenhas do dia</h1>
+            <p class="lead">Leia a vontade com ou sem spoilers.</p>
+            <p><a class="btn btn-roxo mr-3 text-light" href="resenhas.html" role="button ">Todas as resenhas &raquo;</a></p>
+            <div class="pt-md-5"></div>
+        </div>
+        <!-- Resenhas do dia titulo fim-->
+
+        <!-- container principal -->
+        <div class="container marketing">
+
+            <!-- container site -->
+            <div class="row mt-4">
+
+                <!-- Mandaloriano sinopse -->
+                <div class="col-lg-4">
+                    <a href="https://www.imdb.com/title/tt8111088/ "><img class="rounded-circle link mb-3" src="/img/mandinho.jpg " title="IMDB" alt="Generic placeholder image " width="160 " height="160 "></a>
+                    <h2 class="mb-5">Mandaloriano</h2>
+                    <p class="destaque" style="margin-bottom: 2em;">Em The Mandalorian, Din Djarin (Pedro Pascal) é um guerreiro solitário que trabalha como caçador de recompensa. Ele embarca numa jornada pelos territórios esquecidos da galáxia, logo após a queda do Império e antes da criação da temida
+                        Primeira Ordem.</p>
+                    <br><br>
+                    <p><a class="btn btn-dark mr-3 " href="mandalorian-ss.html" role="button ">Sem Spoilers &raquo;</a><a class="btn btn-danger " href="mandalorian-cs.html" role="button ">Com Spoilers &raquo;</a></p>
+                </div>
+                <!-- Mandaloriano sinopse fim -->
+
+                <!-- Irlandes sinopse -->
+                <div class="col-lg-4">
+                    <a href="https://www.imdb.com/title/tt1302006/?ref_=nv_sr_srsg_0 "><img class="rounded-circle link mb-3" title="IMDB" src="img/irishinho.png " alt="Generic placeholder image " width="160 " height="160 "></a>
+                    <h2>O Irlandês</h2>
+                    <p class="destaque mb-5">Conhecido como "O Irlandês", Frank Sheeran (Robert De Niro) é um veterano de guerra cheio de condecorações que concilia a vida de caminhoneiro com a de assassino de aluguel número um da máfia. Promovido a líder sindical, ele torna-se
+                        o principal suspeito quando o mais famoso ex-presidente da associação desaparece misteriosamente.</p>
+                    <p><a class="btn btn-dark mr-3 " href="irlandes-ss.html" role="button ">Sem Spoilers &raquo;</a><a class="btn btn-danger " href="irlandes-cs.html" role="button ">Com Spoilers &raquo;</a></p>
+                </div>
+                <!-- Irlandes sinopse fim -->
+
+                <!-- Gambito sinopse -->
+                <div class="col-lg-4">
+                    <a href="https://www.imdb.com/title/tt10048342/?ref_=nv_sr_srsg_0 "><img class="rounded-circle link mb-3" title="IMDB " src="/img/gambitinho.jfif " alt="Generic placeholder image " width="160 " height="160 "></a>
+                    <h2>O Gambito da Rainha</h2>
+                    <p class="destaque mb-5">O Gambito da Rainha conta a história de Beth Harmon (Anya Taylor-Joy), uma menina órfã que se revela um prodígio do xadrez. Mas agora, aos 22 anos, ela precisa enfrentar seu vício para conseguir se tornar a maior jogadora do mundo.
+                        E quanto mais Beth aprimora suas habilidades no tabuleiro, mais a ideia de uma fuga lhe parece tentadora.</p>
+                    <p><a class="btn btn-dark mr-3 " href="/gambito-ss.html" role="button ">Sem Spoilers &raquo;</a><a class="btn btn-danger " href="gambito-cs.html" role="button ">Com Spoilers &raquo;</a></p>
+                </div>
+                <!-- Gambito sinopse fim-->
+
+                <!-- Maze sinopse -->
+                <div class="col-lg-4 mt-2">
+                    <a href="https://www.imdb.com/title/tt2222042/ "><img class="rounded-circle link mb-3" title="IMDB" src="/img/love.png" alt="Generic placeholder image " width="160 " height="160 "></a>
+                    <h2>Amor e Monstros</h2>
+                    <p class="destaque mb-5">Em Amor e Monstros, criaturas gigantes assumem o controle da terra, fazendo com que o resto da humanidade busque por refúgio no subsolo. Após sete anos do apocalipse dos monstros, Joel Dawson (Dylan O’Brien) consegue se reconectar
+                        via rádio com Aimee (Jessica Henwick), sua namorada da época de escola, e a paixão ressurge. Mesmo com ela vivendo a quase 130 km de distância, Joel percebe que não há nada que o prenda ao subterrâneo e resolve ir em busca de Aimee,
+                        apesar de todos os perigos que possam aparecer em sua jornada.</p>
+                    <p><a class="btn btn-dark mr-3 " href="/maze-ss.html" role="button ">Sem Spoilers &raquo;</a><a class="btn btn-danger " href="maze.cs.html" role="button ">Com Spoilers &raquo;</a></p>
+                </div>
+                <!-- Maze sinopse fim-->
+
+                <!-- Hereditário sinopse -->
+                <div class="col-lg-4 mt-2">
+                    <a href="https://www.imdb.com/title/tt7784604/?ref_=nv_sr_srsg_0"><img class="rounded-circle link mb-3" title="IMDB " src="/img/cast-hered.jpg " alt="Generic placeholder image " width="160 " height="160 "></a>
+                    <h2>Hereditário</h2>
+                    <p class="destaque mb-5 mt-5">Após a morte da reclusa avó, a família Graham começa a desvendar algumas coisas. Mesmo após a partida da matriarca, ela permanece como se fosse um sombra sobre a família, especialmente sobre a solitária neta adolescente, Charlie, por
+                        quem ela sempre manteve uma fascinação não usual. Com um crescente terror tomando conta da casa, a família explora lugares mais escuros para escapar do infeliz destino que herdaram.</p>
+                    <p><a class="btn btn-dark mr-3 mt-4" href="/hereditario-ss.html" role="button ">Sem Spoilers &raquo;</a><a class="btn btn-danger mt-4" href="hereditario-cs.html" role="button ">Com Spoilers &raquo;</a></p>
+                </div>
+                <!-- Hereditário sinopse fim-->
+
+                <!-- Jujutsu sinopse -->
+                <div class="col-lg-4 mt-2">
+                    <a href="https://pt.wikipedia.org/wiki/Jujutsu_Kaisen "><img class="rounded-circle link mb-3" title="IMDB" src="/img/logo-ogo.jpg" alt="Generic placeholder image " width="160 " height="160 "></a>
+                    <h2>Jujutsu Kaisen</h2>
+                    <p class="destaque mb-5" style="margin-top: 100px;">Jujutsu Kaisen é um mangá japonês escrito e ilustrado por Gege Akutami, serializado na Weekly Shōnen Jump desde 5 de março de 2018. Os capítulos individuais são compilados em volume tankōbon, e publicados pela Shueisha desde julho
+                        de 2018. A série é licenciada e publicada no Brasil pela editora Panini.</p>
+                    <p><a class="btn btn-dark mr-3 mt-5" href="jujutsu-ss.html" role="button ">Sem Spoilers &raquo;</a><a class="btn btn-danger mt-5" href="jujutsu-cs.html" role="button ">Com Spoilers &raquo;</a></p>
+                </div>
+                <!-- Jujutsu sinopse fim-->
+
+                <hr class="featurette-divider">
+                <!-- PQ assistir titulo -->
+                <div class="pricing-header px-3 py-3 pt-md-5 mx-auto text-center " id="pq">
+                    <h1 class="display-4 ">Por que assistir?</h1>
+                    <p class="lead mb-md-0 mb-sm-5 mb-5">Me convença!</p>
+                </div>
+                <!-- PQ assistir titulo fim-->
+
+                <!-- Mandaloriano -->
+                <div class="row featurette">
+                    <div class="col-md-7">
+                        <h2 class="featurette-heading mb-5">Mas não conheço nada de Star Wars <br><span style="color: rgb(99, 125, 173);">Calma padawan. A série também funcionará para você!</span></h2>
+                        <p class="lead destaque">Mesmo com um universo expandido (muuuuito expandido mesmo), não será um problema entrar sem a bagagem total de Star Wars. Acompanhamos um personagem totalmente novo que vai descobrindo junto de nós as tramas dessa Galáxia pós explosão
+                            estrela da morte (a segunda no caso). Recomendo pelo menos assistir os 3 primeiros filmes da saga e Rogue One, assim você já ficará inteirado da Lore de Mandalorian. </p>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="row justify-content-center">
+                            <a class="link" title="This is the way!" href="mandalorian-ss.html"><img src="https://media.giphy.com/media/j6qnuNv4HoxrlUcjSR/giphy.gif" class="featurette-image rounded img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image"></a>
+                            <p><a class="btn btn-lg btn-outline-light mt-4" href="mandalorian-ss.html" role="button">Me interessei <i class="fas fa-arrow-right"></i></a></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Mandaloriano fim-->
+
+                <hr class="featurette-divider">
+
+                <!-- Irlandes -->
+                <div class="row featurette">
+                    <div class="col-md-7 order-md-2 ">
+                        <h2 class="featurette-heading mb-5">Três horas de filme? Tá Maluco! <br> <span style="color: rgb(99, 125, 173);">Você nem percebe o tempo passar de tão entretido que fica!</span></h2>
+                        <p class="lead destaque ">Calma meu protegido. Diferente dos mafiosos que te botam pra dormir, esse filme te manterá totalmente acordado até o final. Acompanhe a vida de Frank (Robert De Niro), vulgo Irishman, e como ele se torna um pintor de casas e líder
+                            de sindicato. Al Pacino explode daquele jeito que só ele sabe e descubra o porquê de todas as estradas levarem para Joe Pesci, vulgo Russell Bufalino.</p>
+                    </div>
+                    <div class="col-md-5 order-md-1">
+                        <div class="row justify-content-center">
+                            <a class="link" title="Elenco de peso!" href="irlandes-ss.html"><img src="https://media.giphy.com/media/iehrVXXUiRQ69aFFdM/giphy.gif" class="featurette-image rounded img-fluid mx-auto" data-src="holder.js/500x500/auto" title="Elenco de peso!" alt="Generic placeholder image"></a>
+                            <p><a class="btn btn-lg btn-outline-light mt-4" href="irlandes-ss.html" role="button">Me interessei <i class="fas fa-arrow-right"></i></a></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Irlandes fim-->
+
+                <hr class="featurette-divider">
+
+                <!-- Gambito -->
+                <div class="row featurette">
+                    <div class="col-md-7 ">
+                        <h2 class="featurette-heading mb-5">Uma série sobre Xadrez? Sério isso? <br> <span style="color: rgb(99, 125, 173);">Essa obra de arte dará um Xeque Mate na sua relutância!</span></h2>
+                        <p class="lead destaque ">Beth Harmon (Anya Taylor-Joy) é um gênio quando o assunto é xadrez. Ela nos cativa com seu jeito sádico de humilhar os oponentes no jogo, seu ar de superioridade e elegância se destacam numa época onde as mulheres eram ensinadas
+                            apenas a abrir mão de seus sonhos e constituir família. Tenho certeza que depois dessa série você vai pegar mais leve na bebida e nos remédios.</p>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="row justify-content-center">
+                            <a class="link" title="Melhor que eu só duas de mim" href="gambito-ss.html"><img src="https://media.giphy.com/media/hzAR4V86zuCKQKe6kP/giphy.gif" class="featurette-image rounded img-fluid mx-auto" title="Melhor que eu só duas de mim" data-src="holder.js/500x500/auto" alt="Generic placeholder image"></a>
+                            <p><a class="btn btn-lg btn-outline-light mt-4 mb-5" href="gambito-ss.html" role="button">Me interessei <i class="fas fa-arrow-right"></i></a></p>
+                        </div>
+                    </div>
+                    <hr class="featurette-divider">
+                </div>
+                <!-- Gambito fim-->
+
+                <!-- Amor e Monstros -->
+                <div class="row featurette">
+                    <div class="col-md-7 order-md-2 ">
+                        <h2 class="featurette-heading mb-5">Mais um filme de mundo zuado, chato! <br> <span style="color: rgb(99, 125, 173);">Entendo seu ponto, mas esse filme foca mais na jornada do herói!</span></h2>
+                        <p class="lead destaque ">O rapaz do Maze Runner está de volta, e correndo como nunca nessa nova aventura! Os monstros estão com uma veracidade impressionante e a comédia funciona muito bem.</p>
+                    </div>
+                    <div class="col-md-5 order-md-1">
+                        <div class="row justify-content-center">
+                            <a class="link" title="Corre menino do Maze Runner!" href="maze-ss.html"><img src="https://media.giphy.com/media/ti1pjISQzGoPdW6k5B/giphy.gif" class="featurette-image rounded img-fluid mx-auto" data-src="holder.js/500x500/auto" title="Para quem não curte sapo esse filme é uma beleza..." alt="Generic placeholder image"></a>
+                            <p><a class="btn btn-lg btn-outline-light mt-4 mb-5" href="maze-ss.html" role="button">Me interessei <i class="fas fa-arrow-right"></i></a></p>
+                        </div>
+                    </div>
+                    <hr class="featurette-divider">
+                </div>
+                <!-- Amor e Monstros fim-->
+
+                <!-- Hereditário -->
+                <div class="row featurette">
+                    <div class="col-md-7 ">
+                        <h2 class="featurette-heading mb-5">Quero susto, tem susto? <br> <span style="color: rgb(99, 125, 173);">Não só tem susto como tem uma trama com personagens muito carismáticos!</span></h2>
+                        <p class="lead destaque ">Manja família disfuncional? Então... essa é totalmente quebrada e errada. Mas será que é falta de terapia ou algo mais complexo?</p>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="row justify-content-center">
+                            <a class="link" title="Ninguém lava a louça!" href="hereditario-ss.html"><img src="https://media.giphy.com/media/3ohs4dUDl3TEKdp3pu/giphy.gif" class="featurette-image rounded img-fluid mx-auto" title="Ninguém lava a louça!" data-src="holder.js/500x500/auto" alt="Generic placeholder image"></a>
+                            <p><a class="btn btn-lg btn-outline-light mt-4" href="hereditario-ss.html" role="button">Me interessei <i class="fas fa-arrow-right"></i></a></p>
+                        </div>
+                    </div>
+                    <hr class="featurette-divider">
+                </div>
+                <!-- Hereditário fim-->
+
+
+                <!-- Jujutsu -->
+                <div class="row featurette">
+                    <div class="col-md-7 order-md-2 ">
+                        <h2 class="featurette-heading mb-5">Anime genérico? <br> <span style="color: rgb(99, 125, 173);">Muito pelo contrário amigo, aqui a história e a porradaria cativam! </span></h2>
+                        <p class="lead destaque ">O anime sabe quebrar a tensão nos momentos certos, sabe criar sensasão de perigo e sem falar nos personagens. Ah os personagens... cara TODOS os personagens são muito cativantes!</p>
+                    </div>
+                    <div class="col-md-5 order-md-1">
+                        <div class="row justify-content-center">
+                            <a class="link" href="jujutsu-ss.html"><img src="https://media.giphy.com/media/vRc2V5ixLGh0OU02zp/giphy.gif" class="featurette-image rounded img-fluid mx-auto" data-src="holder.js/500x500/auto" title="Olha essa animação!" alt="Generic placeholder image"></a>
+                            <p><a class="btn btn-lg btn-outline-light mt-4 mb-5" href="jujutsu-ss.html" role="button">Me interessei <i class="fas fa-arrow-right"></i></a></p>
+                        </div>
+                    </div>
+                    <hr class="featurette-divider">
+                </div>
+                <!-- Jujutsu fim-->
+
+                <hr class="featurette-divider mt-5 mb-5">
+
+                <!-- Assunto do momento -->
+                <div class="pricing-header px-3 py-3 pt-md-5 mx-auto text-center " id="dicas">
+                    <h1 class="display-4 ">Dicas dicosas</h1>
+                    <p class="lead mb-md-0 mb-sm-5 mb-5">Alguma dica aqui tenho certeza que é para você!</p>
+                </div>
+                <!-- Assunto do momento fim-->
+
+                <!-- Snyder Cut -->
+                <div class="row featurette">
+                    <div class="col-md-7">
+                        <h2 class="featurette-heading mb-5">Snyder Cut. Eaí vale a pena?<br><span style="color: rgb(99, 125, 173);">Olha vou te dizer que vale, mas não se empolga...</span></h2>
+                        <p class="lead destaque">Para todos os órfãos de Liga da Justiça eu vos digo, finalmente um filme melhor do que o primeiro. Maaaaas não está aquelas coisas também viu confesso (principalmente por aquele 4:3, aquilo não me desce). Tirando os CG's estranhos
+                            e muita coisa desnecessária que entrou no corte final o filme vale a pena sim, mas reserva um tempo ai na agenda viu. </p>
+                    </div>
+                    <div class="col-md-5">
+                        <div class="row justify-content-center">
+                            <a class="link" title="This is the way!" href="https://topflix.tv/filmes/assistir-online-liga-da-justica-snyder-cut/?desk"><img src="https://media.giphy.com/media/7gFlaHaV444JOhJ07M/giphy.gif" class="featurette-image rounded img-fluid mx-auto" data-src="holder.js/500x500/auto" alt="Generic placeholder image"></a>
+                            <p><a class="btn btn-lg btn-assistir mt-4" href="https://topflix.tv/filmes/assistir-online-liga-da-justica-snyder-cut/?desk" role="button">Assistir de Grátis <i class="fas fa-arrow-right"></i></a></p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Snyder Cut fim-->
+
+                <!-- Recomendações do dia titulo -->
+                <div class="mt-5 pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center " id="reco">
+                    <h1 class="display-4">Talvez você goste</h1>
+                    <p class="lead">Veja obras que vale a pena dar uma conferida!</p>
+                    <p><a class="btn mx-1 mt-3 text-light botao btn-roxo" href="recomendacoes.html" role="button ">Todas as recomendações &raquo;</a></p>
+                    <div class="pt-md-5"></div>
+                </div>
+                <!-- Recomendações do dia titulo fim -->
+
+                <!-- Recomendações do dia -->
+                <div class="album py-5">
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <div class="card mb-4 shadow-sm bg-card">
+                                    <a href="https://www.netflix.com/br/title/81157374"><img class="card-img-top link" title="mãe cuidando de filha, tão bonito..." src="/img/fuja.jpg" alt="tema-terror" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail"></a>
+                                    <div class="card-body">
+                                        <p class="cart-text" style="color: black;">Embarque nessa aparentemente normal intriga de mãe e filha. E lembre-se, fuja!</p>
+                                        <div class="">
+                                            <br>
+                                            <br>
+                                            <small class="text-muted">Atualizado dia 12/04/2021</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card mb-4 shadow-sm bg-card">
+                                    <a href="https://www.primevideo.com/detail/The-Office/0H7JFOPK2QO9WVZ8D9D0J5ZRQN"><img class="card-img-top link" title="o escritório mais maluco da TV" src="/img/to.jpg" alt="tema-terror" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail"></a>
+                                    <div class="card-body">
+                                        <p class="cart-text" style="color: black;">Alerta de cringe. Essa série te joga em situações onde você não sabe se ri ou coloca a cabeça dentro de um buraco de vergonha alhiea!</p>
+                                        <div class="mt-3">
+                                            <small class="text-muted">Atualizado dia 12/04/2021</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="card mb-4 shadow-sm bg-card">
+                                    <a href="https://topflix.tv/series/assistir-online-the-boys-serie/"><img class="card-img-top link" style="height: 210px;" title="Sangue e escrotidão definem!" src="/img/the-boys.png" alt="tema-terror" data-src="holder.js/100px225?theme=thumb&bg=55595c&fg=eceeef&text=Thumbnail"></a>
+                                    <div class="card-body">
+                                        <p class="cart-text" style="color: black; margin-bottom: 40px;">Geralmente confiamos nos herois certo? Aqui o sentimento é contrário. Se tu é um super vai tomar porrada!</p>
+                                        <div class="mt-3">
+                                            <small class="text-muted">Atualizado dia 26/04/2021</small>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <hr class="featurette-divider mb-5">
+                    </div>
+                </div>
+                <!-- Recomendações do dia fim -->
+                <!-- /END THE FEATURETTES -->
+            </div>
+            <!-- /.container site fim-->
+
+        </div>
+        <!-- container principal fim -->
+
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer-20192">
+        <div class="site-section">
+            <div class="container">
+                <div class="cta d-block d-md-flex align-items-center px-5">
+                    <div>
+                        <h2 class="mb-0">Quer outras recomendações?</h2>
+                        <h3 class="text-light">Vamos começar</h3>
+                    </div>
+                    <div class="ml-auto">
+                        <a href="recomendacoes.html" class="btn btn-outline-light rounded py-3 px-5">Recomendações <i class="fas fa-arrow-right"></i></a>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-sm">
+                        <a href="https://github.com/MoleraBoy/portfolio-mb" class="footer-logo">MB Company</a>
+                        <p class="copyright">
+                            <small>&copy; 2021</small>
+                        </p>
+                    </div>
+                    <div class="col-sm">
+                        <h3>Clientes</h3>
+                        <ul class="list-unstyled links">
+                            <li><a href="mailto:matheus090201gx@gmail.com">Gostaria de ser um?</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm">
+                        <h3>Companhia</h3>
+                        <ul class="list-unstyled links">
+                            <li><a href="https://portfolio-mbs.netlify.app/#sobre">Quem sou</a></li>
+                            <li><a href="https://portfolio-mbs.netlify.app/#cursos">Carreira</a></li>
+                            <li><a href="https://portfolio-mbs.netlify.app/#contato">Me contate</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-sm">
+                        <h3>Informações adicionais</h3>
+                        <ul class="list-unstyled links">
+                            <li><a href="/termos.txt">Termos &amp; Condições</a></li>
+                            <li><a href="/privacidade.txt">Política de privacidade</a></li>
+                        </ul>
+                    </div>
+                    <div class="col-md-3">
+                        <h3>Nos vemos nas redes</h3>
+                        <ul class="list-unstyled social">
+                            <li><a href="https://www.instagram.com/o_incrivel_brandao/"><span class="icon-facebook"><i class="fab fa-instagram"></i></span></a></li>
+                            <li><a href="https://github.com/MoleraBoy"><span class="icon-twitter"><i class="fab fa-github"></i></span></a></li>
+                            <li><a href="https://twitter.com/moleraboy"><span class="icon-linkedin"><i class="fab fa-twitter"></i></span></a></li>
+                            <li><a href="https://www.linkedin.com/in/matheus-brandão-da-silva-388332168/"><span class="icon-medium"><i class="fab fa-linkedin-in"></i></span></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+
+</html>
