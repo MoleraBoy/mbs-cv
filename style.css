@@ -340,3 +340,15 @@ background: linear-gradient(to right, #243B55, #141E30); /* W3C, IE 10+/ Edge, F
 .card:hover .card-img-overlay {
   opacity: 1;
 }
+#avatar {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 999;
+  transition: transform 0.3s ease;
+}
+
+.navbar.toggled #avatar {
+  transform: translateX(-50%) translateY(100%);
+}
