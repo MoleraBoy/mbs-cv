@@ -108,27 +108,27 @@
         </div>
       </section>
 
-    <section id="contato">
-      <div class="container text-center bg-claro text-light">
-        <h2 class="m-5 pt-5">Contato</h2>
-        <p>Entre em contato comigo para discutir projetos ou tirar dúvidas.</p>
-        <form>
-          <div class="form-group">
-            <label for="nome">Nome:</label>
-            <input type="text" class="form-control" id="nome" placeholder="Digite seu nome">
-          </div>
-          <div class="form-group">
-            <label for="email">Email:</label>
-            <input type="email" class="form-control" id="email" placeholder="Digite seu email">
-          </div>
-          <div class="form-group">
-            <label for="mensagem">Mensagem:</label>
-            <textarea class="form-control" id="mensagem" rows="5" placeholder="Digite sua mensagem"></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary button">Enviar</button>
-        </form>
-      </div>
-    </section>
+      <section id="contato">
+        <div class="container text-center bg-claro text-light">
+          <h2 class="m-5 pt-5">Contato</h2>
+          <p>Entre em contato comigo para discutir projetos ou tirar dúvidas.</p>
+          <form action="mailto:matheus090201gx@gmail.com" method="POST" enctype="text/plain">
+            <div class="form-group">
+              <label for="nome">Nome:</label>
+              <input type="text" class="form-control" id="nome" name="nome" placeholder="Digite seu nome">
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" class="form-control" id="email" name="email" placeholder="Digite seu email">
+            </div>
+            <div class="form-group">
+              <label for="mensagem">Mensagem:</label>
+              <textarea class="form-control" id="mensagem" name="mensagem" rows="5" placeholder="Digite sua mensagem"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary button">Enviar</button>
+          </form>
+        </div>
+      </section>
   </main>
 
   <footer>

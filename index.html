@@ -67,12 +67,12 @@
     <section id="sobre">
       <div class="container">
         <div class="programador-imagem img-fluid">
-                <div class="col-12 col-md-12">
-                  <a href="#"><img src="eu.png" alt="Matheus Brandão" class="img-fluid"></a>
-                  <h1 class="text-center " >Matheus Brandao da Silva</h2>
-                      <h4 class="text-center texto-efeito" >Desenvolvedor Web/Front End Designer e Web Designer <br><a href="index.html#contato"><button class="button mt-5">Contato</button></a></h4>
-                </div>
-              </div>
+          <div class="col-12 col-md-12">
+              <a href="#"><img src="eu.png" alt="Matheus Brandão" class="img-fluid"></a>
+              <h1 class="text-center " >Matheus Brandao da Silva</h2>
+              <h4 class="text-center texto-efeito" >Desenvolvedor Web/Front End Designer e Web Designer <br><a href="index.html#contato"><button class="button mt-5">Contato</button></a></h4>
+          </div>
+        </div>
       </div>
     </section>
     
@@ -155,26 +155,27 @@
       </section>
 
     <section id="contato">
-      <div class="container text-center bg-claro text-light">
-        <h2 class="m-5 pt-5">Contato</h2>
-        <p>Entre em contato comigo para discutir projetos ou tirar dúvidas.</p>
-        <form>
-          <div class="form-group">
-            <label for="nome">Nome:</label>
-            <input type="text" class="form-control" id="nome" placeholder="Digite seu nome">
-          </div>
-          <div class="form-group">
-            <label for="email">Email:</label>
-            <input type="email" class="form-control" id="email" placeholder="Digite seu email">
-          </div>
-          <div class="form-group">
-            <label for="mensagem">Mensagem:</label>
-            <textarea class="form-control" id="mensagem" rows="5" placeholder="Digite sua mensagem"></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary button">Enviar</button>
-        </form>
-      </div>
-    </section>
+      <section id="contato">
+        <div class="container text-center bg-claro text-light">
+          <h2 class="m-5 pt-5">Contato</h2>
+          <p>Entre em contato comigo para discutir projetos ou tirar dúvidas.</p>
+          <form action="mailto:matheus090201gx@gmail.com" method="POST" enctype="text/plain">
+            <div class="form-group">
+              <label for="nome">Nome:</label>
+              <input type="text" class="form-control" id="nome" name="nome" placeholder="Digite seu nome">
+            </div>
+            <div class="form-group">
+              <label for="email">Email:</label>
+              <input type="email" class="form-control" id="email" name="email" placeholder="Digite seu email">
+            </div>
+            <div class="form-group">
+              <label for="mensagem">Mensagem:</label>
+              <textarea class="form-control" id="mensagem" name="mensagem" rows="5" placeholder="Digite sua mensagem"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary button">Enviar</button>
+          </form>
+        </div>
+      </section>
   </main>
 
   <footer>
@@ -182,7 +183,6 @@
       <p>&copy; 2023 Matheus Brandão. Todos os direitos reservados.</p>
     </div>
   </footer>
-
   <script>
     // Função para verificar se a seção está visível na janela do navegador
     function isSectionVisible(section) {
@@ -205,7 +205,7 @@
     // Exibir a seção quando a página é carregada
     window.addEventListener('load', showSection);
   </script>
-    <script>
+  <script>
         const floatingButton = document.getElementById('floatingBtn');
         const floatingMenu = document.getElementById('floatingMenu');
     
@@ -213,7 +213,7 @@
           this.classList.toggle('active');
           floatingMenu.classList.toggle('active');
         });
-      </script>
+ </script>
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
