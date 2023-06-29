@@ -97,11 +97,11 @@ section#sobre h4:first-of-type {
 @media (max-width: 1439px) {
   .mb-10 {
     margin-bottom: 25%;
-    margin-top: 25%;
+    margin-top: 15%;
   }
-  .programador-imagem{
-    width: 75%;
-    height: 10%;
+  .programador-imagem img{
+    width: 70%;
+    height: 50%;
   }
   .mb-6{
     margin-top: 20px;
@@ -116,8 +116,8 @@ section#sobre h4:first-of-type {
     margin-bottom: 25%;
     margin-top: 20%;
   }
-  .programador-imagem{
-    width: 75%;
+  .programador-imagem img{
+    width: 56%;
     height: 10%;
   }
   .texto-diminuir{
@@ -135,7 +135,7 @@ section#sobre h4:first-of-type {
     margin-bottom: 25%;
     margin-top: 20%;
   }
-  .programador-imagem{
+  .programador-imagem img{
     width: 56%;
     height: 10%;
   }
