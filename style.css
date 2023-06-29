@@ -152,7 +152,7 @@ section#sobre h4:first-of-type {
 }
 
 .programador-imagem img {
-  height: 100%;
+  height: 10%;
   object-fit: cover;
   border-radius: 25%;
 
